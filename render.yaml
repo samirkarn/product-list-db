@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: json-server
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npx json-server --watch db.json --port 3000"
+    plan: free
+    regions:
+      - oregon
